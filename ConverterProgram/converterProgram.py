@@ -25,7 +25,7 @@ def userInput(message):
 
 
 #--------------------------------------------------------------------------------------------------------------------------
-#     INPUT SANITATION 
+#     INPUTS
 
 
 #-----BINARY-SANITATION--------------------------------
@@ -37,9 +37,21 @@ def binarySanitised():
     elif len(byte) < 8:
         print("Error: input longer than 8 digits")
         binarySanitised()
-#-----HEXADECIMAL-SANITATION---------------------------
-def hexSanitised():
-    pass
+    return byte
+#-----HEXADECIMAL-INPUTS-------------------------------
+def hexadecSanitised():
+    hexIn = input("Please enter a hexadecimal value:")
+    return hexIn
+#-----DENARY-INPUTS-POSITIVE---------------------------
+def denarySanitised():
+    denIn = input("Please enter a denary value from 0 to 255")
+    if denIn > 255:
+        print("Error: input larger than 255")
+        denSanitised()
+    elif denIn < 0:
+        print("Error: input smaller than 0")
+        binarySanitised()
+    return denIn
     
     
     
@@ -247,7 +259,11 @@ def d2c():
 
 
 #--------------------------------------------------------------------------------------------------------------------------   
+#     DENARY TO FIXED POINT BINARY
 
+
+def d2f():
+    denNum = input("Please     
     
 selection = menu()
 

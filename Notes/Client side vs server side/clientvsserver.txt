@@ -1,0 +1,44 @@
+client vs server-side:
+
+	problem: how to get a single application onto any computer
+
+	compiler vs interpreter:
+		
+		compilers: compiler for a specific OS
+		interpreters: interpret code for most Os's 
+		
+		interpreters are slower and leave code vulnerable 
+
+
+
+web pages are converted to machine code on a target computer using an interpreter
+target machine = client 
+interprter = browser 
+
+
+since conversion is carried out on the client side we can call this client-side processing 
+
+
+NEW PROBLEM:
+		secure payment
+
+SOLUTION: 
+		server side code
+
+
+   client[]------request----->[]server
+         []<---html+css+js----[]
+
+   client[]------request----->[]server--->php/asp--->html
+         []<---html+css=js----[]
+
+
+js is executed locally however it is not stored when you leave the site:
+	cookies can  be used to store data client-side
+
+php/asp can be used to store data in a database
+
+these 2 things can be used to create dynamic webpages (pages that change depending upon user data)
+
+
+
